@@ -76,6 +76,7 @@ function addBook(e) {
     setTimeout(() => {
       snackbar.style.display = "none";
     }, 3000);
+    e.preventDefault();
   }
 }
 
@@ -88,6 +89,7 @@ function removeBook(e) {
       tr.remove();
     }
   }
+  e.preventDefault();
 }
 
 //Local Storage
